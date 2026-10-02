@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+.aldrich-regular {
+  font-family: "Aldrich", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+body {
+    background: #1f2933;
+    background: linear-gradient(0deg, #192026, 40%, #1f2933);
+    color: #f1f5f9;
+    display: grid;
+    place-items: left;
+    min-width: 1000px;
+    margin: 0;
+}
+h1, h2 {
+    color: white;
+    align-self: center;
+}
+header {
+    background-color: white;
+    color: black;
+    align-content: center;
+    text-align: left;
+    font-family: Aldrich;
+    background-color: #1f2933;
+    position:fixed;
+    width: 100%;
+    height: 4%;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    left: 1%;
+}
+
+
+.Selection {
+    width: 50vw;
+    height: 95vh;
+    background: #2b3640;
+    border-radius: 1%;
+    display: grid;
+    margin-left: 2rem;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 5fr) minmax(0, 10fr) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 0.1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 0.1fr);
+    row-gap: 20px;
+    place-items: center;
+    overflow: hidden;
+}
+
+
+
+.TargetMuscles, .Complexity, .Equipment, .Find {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 0.5%;
+    background-color: #404e5c;
+    min-width: 0;
+    min-height: 10vh;
+}
+
+.TargetMuscles {
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    background: #2b3640;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: 2rem;
+    border-radius: 1%;
+    min-width: 0;
+}
+
+.TG1 {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: #404e5c;
+    padding: 5%;
+    padding-top: 2%;
+}
+
+
+
+.TG2 {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: #404e5c;
+    padding: 5%;
+    padding-top: 2%;
+}
+
+.Complexity {
+    grid-column: 2;
+    grid-row: 3;
+
+}
+
+.Equipment {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+
+.Find {
+   grid-column: 1;
+   grid-row: 5;
+   min-height: 0;
+}
+
+select {
+    width: 100%;
+    max-width: 100%;
+    scrollbar-width: none;
+    border: 2px;
+    border-color: rgb(154, 225, 157);
+}
+
+
+
+select::-webkit-scrollbar {
+    display: none;
+}
+
+
+@media (max-width: 4096px) {
+    .Selection {
+        width: 60vw;
+        min-width: 0;
+        height: 90vh;
+        min-height: 0;
+        margin-top: 3%;
+        margin-left: 19%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .TargetMuscles,
+    .Complexity,
+    .Equipment,
+    .Find {
+        grid-column: 1;
+    }
+
+    .TargetMuscles {
+        grid-row: auto;
+        width: 100%;
+    }
+
+    .Complexity {
+        grid-row: auto;
+        width: 100%;
+    }
+
+    .Equipment {
+        grid-row: auto;
+        width: 100%;
+    }
+
+    .Find {
+        grid-row: auto;
+    }
+}
+
+#results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.exerciseCard {
+    background: #2b3640;
+    width: 50vw;
+    text-align: center;
+    min-width: 0;
+    min-height: 0;
+    border-radius: 1%;
+}

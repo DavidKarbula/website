@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise picker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    
+
+    <header> Workout Exercise Recommendation </header>
+
+
+    <div class ="Selection">
+
+
+        <div class="TargetMuscles">
+            
+
+            <div class="TG1">
+                <h2> Primary Muscle </h2>
+                <select name="primaryMuscle">
+                    <option value="">Select a muscle</option>
+                    <option value="Chest">Chest</option>
+                    <option value="Back">Back</option>
+                    <option value="Lats">Lats</option>
+                    <option value="Quads">Quads</option>
+                    <option value="Glutes">Glutes</option>
+                    <option value="Front_Delts">Shoulder (front)</option>
+                    <option value="Side_Delts">Shoulder (side)</option>
+                    <option value="Back_Delts">Shoulder (rear)</option>
+                    <option value="Triceps">Triceps</option>
+                    <option value="Biceps">Biceps</option>
+                    <option value="Calves">Calves</option>
+                    <option value="Hamstrings">Hamstrings</option>
+                    <option value="Abs">Abs</option>
+                    <option value="Obliques">Obliques</option>
+                </select>
+            </div>
+                      
+            <div class="TG2">
+                <h2> Secondary Muscle </h2>     
+                <select name="secondaryMuscle">
+                    <option value="">Select a muscle</option>
+                    <option value="Chest">Chest</option>
+                    <option value="Back">Back</option>
+                    <option value="Lats">Lats</option>
+                    <option value="Quads">Quads</option>
+                    <option value="Glutes">Glutes</option>
+                    <option value="Front_Delts">Shoulder (front)</option>
+                    <option value="Side_Delts">Shoulder (side)</option>
+                    <option value="Back_Delts">Shoulder (rear)</option>
+                    <option value="Triceps">Triceps</option>
+                    <option value="Biceps">Biceps</option>
+                    <option value="Calves">Calves</option>
+                    <option value="Hamstrings">Hamstrings</option>
+                    <option value="Abs">Abs</option>
+                    <option value="Obliques">Obliques</option>
+                </select>
+            </div>
+            
+
+        </div>
+
+        <div class="Complexity">
+
+            <h2> Maximum Technical Complexity (1-10)</h2> <br>
+            <input type="number" name="maxComplexity">
+
+        </div>
+
+        <div class="Equipment">
+            
+            <h2> Available Equipment</h2>
+
+            <label><input type="checkbox" name="Equipment" value="Bodyweight"> Bodyweight</label>
+            <label><input type="checkbox" name="Equipment" value="Dumbbells"> Dumbbells</label>
+            <label><input type="checkbox" name="Equipment" value="Barbells"> Barbells</label>
+            <label><input type="checkbox" name="Equipment" value="Machines"> Machines</label>
+            <label><input type="checkbox" name="Equipment" value="Bar"> Pull-up Bar</label> <br>
+            <label><input type="checkbox" name="Equipment" value="Cables"> Cables</label>
+            <label><input type="checkbox" name="Equipment" value="Bench"> Bench</label>
+            <label><input type="checkbox" name="Equipment" value="Rack"> Rack</label>
+        </div>
+
+        <div class="Find">
+            <button type="button" id="findExercises">Find Exercises</button>
+        </div>
+
+    </div>
+
+    <div id="results"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
